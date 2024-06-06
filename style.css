@@ -125,19 +125,31 @@ button{
 
 .card-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
     padding-left: 10%;
     padding-right: 10%;
     gap: 36px;
 }
 
+.cards{
+    flex: 1 1 0px;
+    /* max-width: 50%; */
+}
 
 .card-subject{
     border:#3882F6 solid;
     border-radius: 10px;
     padding-bottom: 100%;
     width: 100%;
+    object-fit: cover;
     overflow: hidden;
     position: relative;
+}
+
+.card-subject img{
+    max-width: 100%;
+    object-fit:contain;
 }
 
 .card-subtext{
